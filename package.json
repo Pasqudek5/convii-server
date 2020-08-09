@@ -1,0 +1,20 @@
+{
+  "name": "convii-server",
+  "description": "",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "vercel dev",
+    "start": "npm run shell"
+  },
+  "main": "api/index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ytdl-core": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0"
+  },
+  "private": true
+}
