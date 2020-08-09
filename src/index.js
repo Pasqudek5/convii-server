@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }))
 
-app.use('/src', routes)
+app.use('/api', routes)
 
 app.listen(8080, () => console.log('server started on port 8080'))
 
