@@ -2,11 +2,10 @@
   "name": "convii-server",
   "description": "",
   "scripts": {
-    "lint": "eslint .",
-    "serve": "vercel dev",
-    "deploy": "vercel"
+    "prod": "node src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
-  "main": "api/index.js",
+  "main": "src/index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -14,7 +13,8 @@
     "ytdl-core": "^3.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.12.0"
+    "eslint": "^5.12.0",
+    "nodemon": "^2.0.4"
   },
   "private": true
 }

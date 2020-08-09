@@ -1,4 +1,3 @@
-const functions = require('firebase-functions');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -13,7 +12,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }))
 
-app.use('/api', routes)
+app.use('/src', routes)
 
+app.listen(3000, () => console.log('server started on port 3000'))
 
-exports.convii = functions.https.onRequest(app)

@@ -16,8 +16,6 @@ const messages = {
   VIDEO_DOES_NOT_EXIST: 'Video does not exist.'
 }
 
-
-
 const constants = {
   formats,
   messages,
