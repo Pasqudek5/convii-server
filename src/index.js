@@ -14,5 +14,5 @@ app.use(bodyParser.urlencoded({
 
 app.use('/src', routes)
 
-app.listen(3000, () => console.log('server started on port 3000'))
+app.listen(8080, () => console.log('server started on port 8080'))
 
