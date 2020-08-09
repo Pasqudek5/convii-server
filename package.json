@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "eslint .",
     "serve": "vercel dev",
-    "start": "npm run shell"
+    "deploy": "vercel"
   },
   "main": "api/index.js",
   "dependencies": {
