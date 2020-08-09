@@ -1,6 +1,5 @@
 const { validateURL, getBasicInfo } = require('ytdl-core');
-
-const { status, formats, messages } = require('./constants');
+const { statuses, formats, messages } = require('./constants');
 
 const validator = {
   async validateUrl(req, res, next) {
@@ -10,7 +9,7 @@ const validator = {
 
     if (!isURLValid) {
       return res
-        .status(status.BAD_REQUEST)
+        .status(statuses.BAD_REQUEST)
         .json({ error: messages.INVALID_URL });
     }
 
@@ -28,7 +27,7 @@ const validator = {
       next()
     } catch {
       res
-        .status(status.NOT_FOUND)
+        .status(statuses.NOT_FOUND)
         .json({ error: messages.VIDEO_DOES_NOT_EXIST })
     }
   },
@@ -40,7 +39,7 @@ const validator = {
 
     if (!isFormatCorrect) {
       return res
-        .status(status.BAD_REQUEST)
+        .status(statuses.BAD_REQUEST)
         .json({ error: messages.INVALID_FORMAT });
     }
 
